@@ -1,0 +1,91 @@
+@import url("../../css/base/button.css");
+.content {
+    position: absolute;
+    top: 48px;
+    left: 225px;
+    display: block;
+    width: calc(100% - 225px);
+    height: calc(100vh -48px);
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.content.expand {
+    width: calc(100% - 52px);
+    left: 52px;
+    transition: left 1s;
+}
+
+.content .content-header {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .content-header .title {
+    padding-top: 20px;
+    font-size: 20px;
+    width: auto;
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+.content-header .button {
+    height: 40px;
+    margin-top: 12px;
+    margin-right: 24px;
+    display: flex;
+    cursor: pointer;
+}
+
+.filter {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    padding-top: 4px;
+    justify-content: space-between;
+}
+
+.department,
+.position {
+    height: 40px;
+    width: 202px;
+    margin-left: 16px;
+}
+
+.department .dropdown,
+.position .dropdown {
+    width: 200px;
+    height: auto;
+}
+
+.department .select,
+.position .select {
+    width: calc(100% - 2px);
+}
+
+.filter .refresh {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    background-image: url("../../content/icon/refresh.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.content #gridEmployee {
+    height: calc(100vh - 217px);
+    margin: 0px 24px 0px 24px;
+    line-height: 40px;
+    overflow: scroll;
+    width: calc(100% - 48px);
+}

@@ -1,0 +1,39 @@
+@import url("../css/base/button.css");
+@import url("../css/base/text-box.css");
+@import url("../css/base/dropdown.css");
+@import url("../css/base/table.css");
+@import url("../css/base/paging.css");
+@import url("../css/base/icon.css");
+@import url("../css/base/field-input-icon.css");
+@import url("../css/base/toast-message.css");
+@import url("../css/layout/header.css");
+@import url("../css/layout/menu.css");
+@import url("../css/layout/content.css");
+@import url("../css/layout/popup.css");
+@import url("../css/layout/warning-popup.css");
+@font-face {
+    font-family: ggsans-regular;
+    src: url("../assets/font/GoogleSans-Regular.otf");
+}
+
+@font-face {
+    font-family: ggsans-bold;
+    src: url("../assets/font/GoogleSans-Bold.otf");
+}
+
+body {
+    font-family: ggsans-regular;
+    font-size: 13px;
+    margin: 0;
+    position: relative;
+    /*min-width: 1366px;*/
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.fade {
+    opacity: 0.4;
+}

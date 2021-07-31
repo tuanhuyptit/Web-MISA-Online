@@ -1,0 +1,43 @@
+.field-input-icon {
+    height: 40px;
+    width: 261px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin-left: 24px;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 40px;
+    padding-right: 36px;
+    background-image: url("../../assets/icon/search.png");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+
+.field-input-icon:hover {
+    border-Color: #019160
+}
+
+.field-input-icon:focus {
+    border-Color: #019160
+}
+
+input::placeholder {
+    font-size: 11px;
+}
+
+.input-clear-icon {
+    position: absolute;
+    visibility: hidden;
+    height: 16px;
+    width: 16px;
+    margin-top: 12px;
+    background: #E9EBEE;
+    background-image: url("../../assets/icon/clear.png");
+    background-size: 16px 16px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    right: 10px;
+    cursor: pointer;
+}

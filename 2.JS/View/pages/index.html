@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base/dropdown.css">
+</head>
+
+<body>
+    <div class="col">
+        <label for="">Giới tính</label><br>
+        <div class="select">
+            <div class="inp" id="txtGenderName" Value="-1">Nam</div>
+            <div class="X"></div>
+            <div class="select-arrow rot-0"></div>
+        </div>
+        <div class="dropdown d-none">
+            <div class="dropdown-item">
+                <div class="dropdown-icon"></div>
+                <div class="dropdown-text" Value="1">Nam</div>
+            </div>
+            <div class="dropdown-item">
+                <div class="dropdown-icon"></div>
+                <div class="dropdown-text" Value="0">Nữ</div>
+            </div>
+            <div class="dropdown-item">
+                <div class="dropdown-icon"></div>
+                <div class="dropdown-text" Value="2">Khác</div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../css/main.css"></script>
+    <script src="../js/base/dropdown.js"></script>
+    <script>
+        $(".dropdown-text").click(function() {
+            let a = $(this).attr("Value")
+            $("#txtGenderName").attr("Value", `${a}`);
+            console.log($("#txtGender").attr("Value"));
+        })
+    </script>
+    <script>
+        var x = {
+            non: "non",
+            ngocNgech: "non",
+        }
+
+        for (let i of x) {
+
+        }
+        // let employee = {
+        //     "EmployeeCode": employeeCode,
+        //     "FullName": fullName,
+        //     "Gender": gender,
+        //     "DateOfBirth": "23/11/1998",
+        //     "PhoneNumber": phoneNumber,
+        //     "Email": email,
+        //     "Address": null,
+        //     "IdentityNumber": "038200009999",
+        //     "IdentityDate": "2020-01-08T00:00:00",
+        //     "IdentityPlace": "Tỉnh Thanh Hóa",
+        //     "JoinDate": "2021-07-12T00:00:00",
+        //     "MartialStatus": null,
+        //     "EducationalBackground": null,
+        //     "QualificationId": null,
+        //     "DepartmentId": "469b3ece-744a-45d5-957d-e8c757976496",
+        //     "PositionId": "5bd71cda-209f-2ade-54d1-35c781481818",
+        //     "WorkStatus": 1,
+        //     "PersonalTaxCode": "123456789",
+        //     "Salary": 10000,
+        //     "PositionCode": "P92",
+        //     "PositionName": "Trưởng phòng",
+        //     "DepartmentCode": "PB86",
+        //     "DepartmentName": "Phòng Nhân sự",
+        //     "QualificationName": null,
+        //     "GenderName": genderName,
+        //     "EducationalBackgroundName": null,
+        //     "MartialStatusName": null,
+        //     "CreatedDate": "2021-07-21T00:59:15",
+        //     "CreatedBy": null,
+        //     "ModifiedDate": "2021-07-21T01:14:22",
+        //     "ModifiedBy": null
+        // }
+    </script>
+    <script>
+        /*
+                $('#btnSave').click(function() {
+                    let employee = {};
+
+                    me.form.find("[FieldName]").each(function() {
+                        let cell = $(this),
+                            dataType = cell.attr("DataType"),
+                            fieldName = cell.attr("FieldName"),
+                            value = me.getValueForm(cell, dataType);
+
+                        employee[fieldName] = value;
+                    })
+
+                    $.ajax({
+                        url: "http://cukcuk.manhnv.net/v1/Employees",
+                        method: "POST",
+                        data: JSON.stringify(employee),
+                        contentType: "application/json;charset=utf-8",
+                        dataType: "json",
+                    }).done(res => {
+                        alert("Thêm mới thành công");
+                        location.reload();
+                        me.form.hide();
+                        $(".wrapper").removeClass("fade");
+
+                    }).fail(function(res) {
+                        console.log(res);
+                    });
+                })*/
+    </script>
+</body>
+
+</html>

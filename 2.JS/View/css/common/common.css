@@ -1,0 +1,60 @@
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.bg-select {
+    background-color: #019160 !important;
+    color: #fff;
+}
+
+.selected-row {
+    background: rgb(223, 218, 218);
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.lh-56 {
+    line-height: 56px;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-r {
+    text-align: right;
+}
+
+.ta-l {
+    text-align: left;
+}
+
+.cl-red {
+    color: red;
+}
+
+.p-relative {
+    position: relative;
+}

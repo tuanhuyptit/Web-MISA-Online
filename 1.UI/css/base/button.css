@@ -1,0 +1,35 @@
+.button {
+    height: 40px;
+    display: inline-block;
+    border-radius: 4px;
+    color: #fff;
+    padding-right: 24px;
+    text-align: center;
+    background-color: #019160;
+    line-height: 40px;
+}
+
+button {
+    border: none;
+}
+
+.button:hover {
+    background-color: #2fbebe;
+}
+
+button:active {
+    background-color: #01b075;
+}
+
+.button .button-icon {
+    margin: 12px 8px 8px 16px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../content/icon/add.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.button .button-text {
+    white-space: nowrap;
+}
